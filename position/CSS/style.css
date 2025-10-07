@@ -1,0 +1,111 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-weight:bolder; color: white;}
+
+body{
+    background-image: linear-gradient(rgb(68, 2, 2), rgba(253, 6, 6, 0.445));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+}
+
+article{
+    margin-bottom: 2rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-style: solid;
+    border-color: white;
+    margin-left: 49rem;
+}
+
+.cards{
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    border-style: solid;
+    border-color: white;
+    padding: 1rem;
+    background-color: grey;
+    width: 20rem;
+}
+
+.card:first-child{
+    position: relative;
+}
+
+.card:first-child button{
+    background-color: rgba(100, 100, 100, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: scale .2s;
+}
+
+.card:nth-child(2){
+    position:relative;
+    z-index: -1;
+}
+
+.card:nth-child(2) img{
+    width: 20%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: -1;
+    transition: scale .2s;
+    opacity: .5;
+}
+
+button:active{
+    scale: .8;
+    background-color: black;
+}
+
+p, button{
+    color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    height: 10vh;
+    margin-top: -10rem;
+    width: 100%;
+}
+
+a{
+    margin-top: 10rem;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+ul{
+    text-decoration: none;
+}
+
+li{
+    display: inline;
+    padding: 5px;
+    margin: 2rem;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
