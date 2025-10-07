@@ -1,0 +1,36 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-content: center; /*csak több sorba tördelt tartalomnál működ*/ /*align-items: mindig működ*/
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+article{
+    border: 1px solid rgba(0, 0, 0, 0.5); /*szélesség, stílus, szín*/
+    width: 6vw;
+    height: 6vw;
+    background: radial-gradient(rgb(255, 0, 0) 20%, rgb(170, 255, 0) 50%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: scale .1s; /*növekedés átmenete egyenletesebb*/
+}
+
+article:hover{
+    box-shadow: 0 0 10px 3px rgb(50, 50 , 50); /*vízszintes, függőleges, blur, milyen nagy legyen*/
+}
+
+article:active{
+    scale: 1.1;
+}
+
+article:nth-child(3){
+    scale: .9;
+    cursor: pointer;
+    user-select: none; /*nem lehet kiválasztani/kijelölni a tartalmat*/
+}
