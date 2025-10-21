@@ -98,6 +98,11 @@ footer{
         flex-direction: column;
     }
 
+    nav{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
 }
 
 @media (max-width: 800px) {
